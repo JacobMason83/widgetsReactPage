@@ -1,0 +1,30 @@
+.navigation {
+  display: grid;
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  .nav-wrapper {
+    display: grid;
+    @include bg();
+    height: 90vh;
+    .nav-link-wrapper {
+      text-align: center;
+      margin-top: 35px;
+      width: 100%;
+      overflow: hidden;
+      font-size: 1em;
+      a {
+        text-decoration: none;
+        color: $font-color;
+        font-weight: 900;
+        .nav-link {
+          text-decoration: none;
+          color: $font-color;
+        }
+        .nav-link-active {
+          text-decoration: none;
+          color: $font-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.header {
+    grid-row: 1;
+    grid-column: 1 / span 12;
+    @include bg();
+    color: white; 
+}

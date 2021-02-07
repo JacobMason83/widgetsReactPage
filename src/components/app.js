@@ -1,12 +1,30 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+
+import NavBar from './NavBar/navBar'
+import Home from './pages/home'
+import SwitchColor from './pages/color-changer'
 
 export default class App extends Component {
-  render() {
+  constructor (props) {
+    super(props)
+    this.state = {
+      bgColor: ''
+    }
+  }
+  render () {
     return (
-      <div className='app'>
-        <h1>DevCamp React Starter</h1>
-        <h2>React Redux Router</h2>
-      </div>
-    );
+      
+         
+        <Router>
+            <NavBar />
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/color-changer' component={SwitchColor} />
+          </Switch>
+        </Router>
+     
+    )
   }
 }
+
