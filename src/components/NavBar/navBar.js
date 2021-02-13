@@ -89,6 +89,15 @@ const NavBar = () => {
             Math Calculator
           </NavLink>
         </div>
+        <div className='nav-link-wrapper'>
+          <NavLink
+            to='/eCommerce'
+            activeClassName='nav-link-active'
+            className='nav-link'
+          >
+            eCommerce Styles 
+          </NavLink>
+        </div>
       </div>
     </div>
       </Fragment>
